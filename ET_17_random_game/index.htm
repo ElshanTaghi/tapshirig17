@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- <button onclick="Hesab()" >Hesabla</button> -->
+
+
+    <input type="number" name="" id="inp">
+    <br>
+    <button onclick="Yoxla()" >Yoxla</button>
+
+
+    <script>
+let point = 3;
+let x = Math.round(Math.random() * 10);
+let y = document.getElementById("inp").value;
+
+
+
+function Yoxla(){
+    console.log(x);
+    if(x==y){
+        alert("Won")
+    }
+       
+    else if(y>x){
+        alert("kicik daxil et")
+    }
+    // else if(y<x)
+    else{
+        alert("boyuk daxil et")
+    }
+    // else{
+    //     alert("reqem daxil et")
+    // }
+    Hesab();
+    
+}
+
+
+
+function Hesab(){
+    point--;
+ 
+if(point == 0){
+
+    confirm("siz uduzdunuz yeni oyuna baslamaq isteyirsiniz?");
+    location.reload();
+}
+
+}
+
+
+    </script>
+</body>
+</html>
